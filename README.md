@@ -33,3 +33,21 @@ This project is a **simple keylogger built in Python** that captures user keystr
 ### 1. **Install dependencies**
 ```bash
 pip install pynput
+```
+
+
+### 2. **Update email configuration in script**
+Replace the sender, receiver, and password fields:
+
+```python
+sender_email = "your_email@gmail.com"
+receiver_email = "your_email@gmail.com"
+password = "your_app_password"
+```
+🔐 Use an App Password if you're using Gmail with two-factor authentication.
+
+3. Run the script
+```bash
+python keylogger.py
+```
+Keystrokes will be saved in keystrokes.txt and sent via email every 60 seconds.
